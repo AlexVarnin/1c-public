@@ -18,6 +18,8 @@
 			<valueType>
 				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Склады</v8:Type>
 			</valueType>
+			<appearance/>
+			<inputParameters/>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Номенклатура</dataPath>
@@ -31,19 +33,8 @@
 			<valueType>
 				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Номенклатура</v8:Type>
 			</valueType>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Характеристика</dataPath>
-			<field>Характеристика</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Характеристика</v8:content>
-				</v8:item>
-			</title>
-			<valueType>
-				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.ХарактеристикиНоменклатуры</v8:Type>
-			</valueType>
+			<appearance/>
+			<inputParameters/>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Количество</dataPath>
@@ -73,6 +64,7 @@
 					</dcscor:value>
 				</dcscor:item>
 			</appearance>
+			<inputParameters/>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Цена</dataPath>
@@ -102,6 +94,7 @@
 					</dcscor:value>
 				</dcscor:item>
 			</appearance>
+			<inputParameters/>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Сумма</dataPath>
@@ -131,14 +124,15 @@
 					</dcscor:value>
 				</dcscor:item>
 			</appearance>
+			<inputParameters/>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ДатаПоследнейПродажи</dataPath>
-			<field>ДатаПоследнейПродажи</field>
+			<dataPath>ДатаПоследнейПередачи</dataPath>
+			<field>ДатаПоследнейПередачи</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Дата последней продажи (МП, доставлен)</v8:content>
+					<v8:content>Дата последней передачи хранителю</v8:content>
 				</v8:item>
 			</title>
 			<valueType>
@@ -158,14 +152,15 @@
 					</dcscor:value>
 				</dcscor:item>
 			</appearance>
+			<inputParameters/>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ДнейСПоследнейПродажи</dataPath>
-			<field>ДнейСПоследнейПродажи</field>
+			<dataPath>ДнейСПоследнейПередачи</dataPath>
+			<field>ДнейСПоследнейПередачи</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Дней с последней продажи</v8:content>
+					<v8:content>Дней с последней передачи</v8:content>
 				</v8:item>
 			</title>
 			<valueType>
@@ -187,19 +182,7 @@
 					</dcscor:value>
 				</dcscor:item>
 			</appearance>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>НетПродажНаМП</dataPath>
-			<field>НетПродажНаМП</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Нет продаж на МП</v8:content>
-				</v8:item>
-			</title>
-			<valueType>
-				<v8:Type>xs:boolean</v8:Type>
-			</valueType>
+			<inputParameters/>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ПартнерПоследнейПередачи</dataPath>
@@ -213,6 +196,42 @@
 			<valueType>
 				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Партнеры</v8:Type>
 			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ХарактеристикаЦО</dataPath>
+			<field>ХарактеристикаЦО</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтролируемаяПартия</dataPath>
+			<field>КонтролируемаяПартия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Назначение</dataPath>
+			<field>Назначение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Характеристика</dataPath>
+			<field>Характеристика</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Помещение</dataPath>
+			<field>Помещение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Серия</dataPath>
+			<field>Серия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СерияЦО</dataPath>
+			<field>СерияЦО</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УпаковкаЦО</dataPath>
+			<field>УпаковкаЦО</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидЦены</dataPath>
+			<field>ВидЦены</field>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ ПЕРВЫЕ 1
@@ -229,18 +248,16 @@
 ВЫБРАТЬ
 	Остатки.Склад КАК Склад,
 	Остатки.Номенклатура КАК Номенклатура,
-	Остатки.Характеристика КАК Характеристика,
 	СУММА(Остатки.ВНаличииОстаток) КАК Количество
 ПОМЕСТИТЬ ВТ_Остатки
 ИЗ
-	РегистрНакопления.ТоварыНаСкладах.Остатки(&amp;ДатаОтчета, {(Склад).* КАК Склад, (Номенклатура).* КАК Номенклатура, (Характеристика).* КАК Характеристика}) КАК Остатки
+	РегистрНакопления.ТоварыНаСкладах.Остатки(&amp;ДатаОтчета, {(Склад).* КАК Склад, (Номенклатура).* КАК Номенклатура}) КАК Остатки
 ГДЕ
 	Остатки.Склад.Наименование В ("К-МАРКЕТ Санкт-Петербург", "Центральный Москва")
 
 СГРУППИРОВАТЬ ПО
 	Остатки.Склад,
-	Остатки.Номенклатура,
-	Остатки.Характеристика
+	Остатки.Номенклатура
 
 ИМЕЮЩИЕ
 	СУММА(Остатки.ВНаличииОстаток) &lt;&gt; 0
@@ -252,7 +269,6 @@
 ////////////////////////////////////////////////////////////////////////////////
 ВЫБРАТЬ
 	Цены.Номенклатура КАК Номенклатура,
-	Цены.ХарактеристикаЦО КАК ХарактеристикаЦО,
 	ВЫБОР
 		КОГДА Цены.Упаковка = ЗНАЧЕНИЕ(Справочник.УпаковкиЕдиницыИзмерения.ПустаяСсылка)
 				ИЛИ ЕСТЬNULL(Цены.Упаковка.Числитель, 0) = 0
@@ -272,67 +288,13 @@
 					(ВЫБРАТЬ РАЗЛИЧНЫЕ
 						Т.Номенклатура
 					ИЗ
-						ВТ_Остатки КАК Т)
-				И СерияЦО = ЗНАЧЕНИЕ(Справочник.СерииНоменклатурыДляЦенообразования.ПустаяСсылка)
-				И УпаковкаЦО = ЗНАЧЕНИЕ(Справочник.УпаковкиЕдиницыИзмерения.ПустаяСсылка)) КАК Цены
-
-ИНДЕКСИРОВАТЬ ПО
-	Номенклатура,
-	ХарактеристикаЦО
-;
-
-////////////////////////////////////////////////////////////////////////////////
-// Заказы маркетплейсов (БИТ.УМ, все схемы работы), текущий статус которых — «Доставлен».
-// Дата продажи — первая запись «Доставлен» в истории статусов заказа.
-ВЫБРАТЬ
-	ИсторияСтатусов.ЗаказТорговойПлощадки КАК ЗаказТорговойПлощадки,
-	МИНИМУМ(ИсторияСтатусов.Период) КАК ДатаДоставки
-ПОМЕСТИТЬ ВТ_ДоставленныеЗаказы
-ИЗ
-	РегистрСведений.топ_СтатусыЗаказовТорговойПлощадки КАК ИсторияСтатусов
-		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.топ_СтатусыЗаказовТорговойПлощадки.СрезПоследних(&amp;ДатаОтчета, ) КАК ТекущиеСтатусы
-		ПО ИсторияСтатусов.ЗаказТорговойПлощадки = ТекущиеСтатусы.ЗаказТорговойПлощадки
-ГДЕ
-	ИсторияСтатусов.УнифицированныйСтатус.Наименование = "Доставлен"
-	И ТекущиеСтатусы.УнифицированныйСтатус.Наименование = "Доставлен"
-	И ИсторияСтатусов.Период &lt; &amp;ДатаОтчета
-
-СГРУППИРОВАТЬ ПО
-	ИсторияСтатусов.ЗаказТорговойПлощадки
-
-ИНДЕКСИРОВАТЬ ПО
-	ЗаказТорговойПлощадки
-;
-
-////////////////////////////////////////////////////////////////////////////////
-ВЫБРАТЬ
-	Соответствие.Номенклатура КАК Номенклатура,
-	МАКСИМУМ(Доставленные.ДатаДоставки) КАК ДатаПоследнейПродажи
-ПОМЕСТИТЬ ВТ_Продажи
-ИЗ
-	ВТ_ДоставленныеЗаказы КАК Доставленные
-		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.топ_ЗаказТорговойПлощадки.Товары КАК ТоварыЗаказа
-		ПО Доставленные.ЗаказТорговойПлощадки = ТоварыЗаказа.Ссылка
-		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.топ_СоответствиеТоваров КАК Соответствие
-		ПО ТоварыЗаказа.Товар = Соответствие.Товар
-ГДЕ
-	НЕ ТоварыЗаказа.Ссылка.ПометкаУдаления
-	И ЕСТЬNULL(ТоварыЗаказа.УнифицированныйСтатус.Наименование, "") &lt;&gt; "Отменен"
-	И Соответствие.Номенклатура В
-			(ВЫБРАТЬ РАЗЛИЧНЫЕ
-				Т.Номенклатура
-			ИЗ
-				ВТ_Остатки КАК Т)
-
-СГРУППИРОВАТЬ ПО
-	Соответствие.Номенклатура
+						ВТ_Остатки КАК Т)) КАК Цены
 
 ИНДЕКСИРОВАТЬ ПО
 	Номенклатура
 ;
 
 ////////////////////////////////////////////////////////////////////////////////
-// Партнер последней передачи хранителю (логика v3)
 ВЫБРАТЬ
 	ПередачаТовары.Номенклатура КАК Номенклатура,
 	МАКСИМУМ(ПередачаТовары.Ссылка.Дата) КАК ДатаПередачи
@@ -378,29 +340,18 @@
 ВЫБРАТЬ
 	Остатки.Склад КАК Склад,
 	Остатки.Номенклатура КАК Номенклатура,
-	Остатки.Характеристика КАК Характеристика,
 	Остатки.Количество КАК Количество,
-	ЕСТЬNULL(ЦеныПоХарактеристике.Цена, ЦеныБезХарактеристики.Цена) КАК Цена,
-	Остатки.Количество * ЕСТЬNULL(ЕСТЬNULL(ЦеныПоХарактеристике.Цена, ЦеныБезХарактеристики.Цена), 0) КАК Сумма,
-	Продажи.ДатаПоследнейПродажи КАК ДатаПоследнейПродажи,
-	РАЗНОСТЬДАТ(Продажи.ДатаПоследнейПродажи, ДОБАВИТЬКДАТЕ(&amp;ДатаОтчета, СЕКУНДА, -1), ДЕНЬ) КАК ДнейСПоследнейПродажи,
-	ВЫБОР
-		КОГДА Продажи.ДатаПоследнейПродажи ЕСТЬ NULL
-			ТОГДА ИСТИНА
-		ИНАЧЕ ЛОЖЬ
-	КОНЕЦ КАК НетПродажНаМП,
+	Цены.Цена КАК Цена,
+	Остатки.Количество * ЕСТЬNULL(Цены.Цена, 0) КАК Сумма,
+	ДатыПередач.ДатаПередачи КАК ДатаПоследнейПередачи,
+	РАЗНОСТЬДАТ(ДатыПередач.ДатаПередачи, ДОБАВИТЬКДАТЕ(&amp;ДатаОтчета, СЕКУНДА, -1), ДЕНЬ) КАК ДнейСПоследнейПередачи,
 	ПартнерыПередач.Партнер КАК ПартнерПоследнейПередачи
 ИЗ
 	ВТ_Остатки КАК Остатки
-		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Цены КАК ЦеныПоХарактеристике
-		ПО Остатки.Номенклатура = ЦеныПоХарактеристике.Номенклатура
-			И (ЦеныПоХарактеристике.ХарактеристикаЦО &lt;&gt; ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатурыДляЦенообразования.ПустаяСсылка))
-			И Остатки.Характеристика.ХарактеристикаНоменклатурыДляЦенообразования = ЦеныПоХарактеристике.ХарактеристикаЦО
-		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Цены КАК ЦеныБезХарактеристики
-		ПО Остатки.Номенклатура = ЦеныБезХарактеристики.Номенклатура
-			И (ЦеныБезХарактеристики.ХарактеристикаЦО = ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатурыДляЦенообразования.ПустаяСсылка))
-		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Продажи КАК Продажи
-		ПО Остатки.Номенклатура = Продажи.Номенклатура
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_Цены КАК Цены
+		ПО Остатки.Номенклатура = Цены.Номенклатура
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ДатыПередач КАК ДатыПередач
+		ПО Остатки.Номенклатура = ДатыПередач.Номенклатура
 		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ПартнерыПередач КАК ПартнерыПередач
 		ПО Остатки.Номенклатура = ПартнерыПередач.Номенклатура</query>
 	</dataSet>
@@ -445,6 +396,23 @@
 		<value xsi:type="dcscor:DesignTimeValue">Справочник.ВидыЦен.ПустаяСсылка</value>
 		<useRestriction>true</useRestriction>
 		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
 	</parameter>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
@@ -502,7 +470,7 @@
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:FilterItemComparison">
 					<dcsset:use>false</dcsset:use>
-					<dcsset:left xsi:type="dcscor:Field">ДнейСПоследнейПродажи</dcsset:left>
+					<dcsset:left xsi:type="dcscor:Field">ДнейСПоследнейПередачи</dcsset:left>
 					<dcsset:comparisonType>GreaterOrEqual</dcsset:comparisonType>
 					<dcsset:right xsi:type="xs:decimal">90</dcsset:right>
 					<dcsset:viewMode>Normal</dcsset:viewMode>
@@ -510,13 +478,13 @@
 					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Дней с последней продажи не меньше</v8:content>
+							<v8:content>Дней с последней передачи не меньше</v8:content>
 						</v8:item>
 					</dcsset:userSettingPresentation>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:FilterItemComparison">
 					<dcsset:use>false</dcsset:use>
-					<dcsset:left xsi:type="dcscor:Field">НетПродажНаМП</dcsset:left>
+					<dcsset:left xsi:type="dcscor:Field">НетПередач</dcsset:left>
 					<dcsset:comparisonType>Equal</dcsset:comparisonType>
 					<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
 					<dcsset:viewMode>Normal</dcsset:viewMode>
@@ -524,7 +492,7 @@
 					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Только без продаж на МП</v8:content>
+							<v8:content>Только без передач</v8:content>
 						</v8:item>
 					</dcsset:userSettingPresentation>
 				</dcsset:item>
@@ -610,13 +578,6 @@
 							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>Характеристика</dcsset:field>
-							<dcsset:groupType>Items</dcsset:groupType>
-							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
-							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
-							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
-						</dcsset:item>
-						<dcsset:item xsi:type="dcsset:GroupItemField">
 							<dcsset:field>Цена</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
@@ -624,14 +585,14 @@
 							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>ДатаПоследнейПродажи</dcsset:field>
+							<dcsset:field>ДатаПоследнейПередачи</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
 							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:GroupItemField">
-							<dcsset:field>ДнейСПоследнейПродажи</dcsset:field>
+							<dcsset:field>ДнейСПоследнейПередачи</dcsset:field>
 							<dcsset:groupType>Items</dcsset:groupType>
 							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
@@ -640,7 +601,7 @@
 					</dcsset:groupItems>
 					<dcsset:order>
 						<dcsset:item xsi:type="dcsset:OrderItemField">
-							<dcsset:field>ДатаПоследнейПродажи</dcsset:field>
+							<dcsset:field>ДатаПоследнейПередачи</dcsset:field>
 							<dcsset:orderType>Asc</dcsset:orderType>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:OrderItemField">
@@ -662,9 +623,6 @@
 							<dcsset:field>Номенклатура</dcsset:field>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:SelectedItemField">
-							<dcsset:field>Характеристика</dcsset:field>
-						</dcsset:item>
-						<dcsset:item xsi:type="dcsset:SelectedItemField">
 							<dcsset:field>Номенклатура.ЕдиницаИзмерения</dcsset:field>
 							<dcsset:lwsTitle>
 								<v8:item>
@@ -683,16 +641,16 @@
 							<dcsset:field>Сумма</dcsset:field>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:SelectedItemField">
-							<dcsset:field>ДатаПоследнейПродажи</dcsset:field>
+							<dcsset:field>ДатаПоследнейПередачи</dcsset:field>
 							<dcsset:lwsTitle>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Последняя продажа</v8:content>
+									<v8:content>Последняя передача</v8:content>
 								</v8:item>
 							</dcsset:lwsTitle>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:SelectedItemField">
-							<dcsset:field>ДнейСПоследнейПродажи</dcsset:field>
+							<dcsset:field>ДнейСПоследнейПередачи</dcsset:field>
 						</dcsset:item>
 					</dcsset:selection>
 				</dcsset:row>
